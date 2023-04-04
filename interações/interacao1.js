@@ -19,7 +19,7 @@ typeWrite(titulo);
 
 function aparecerMensagem(){
     setTimeout(() => {
-        document.querySelector('h2').innerHTML = "Fique a vontade para navegar ";
+        document.querySelector('h2').innerHTML = "Fique a vontade para navegar";
         
     }, 5200 );
 }
