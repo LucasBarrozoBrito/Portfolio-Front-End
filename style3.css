@@ -27,23 +27,44 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+}
+
+i:hover{
+    color: var(--color5);
+}
+
+#caixa{
+    background-color: #1cfeba94;
+    background: linear-gradient(45deg,#00000000,#1cfeba74 , #54799900);
+    width: 100vw;
+    
+    /* box-shadow: 3px 3px 8px #212529a5; */
+}
 
 
 .text{
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 900px ;
+    font-weight:bolder ;
     font-size: 2rem;
-    color: var(--color5);
-    /* border: 3px solid #fff; */
+    color: var(--color1);
+    /* border: 3px solid var(--color5); */
+    text-shadow: 1.5px 1.5px 1.5px var(--color5);
     padding: 13px 39px 13px 39px;
     
     
 
 }
+
 
 h2{
     font-family: 'Source Code Pro', monospace;
@@ -51,14 +72,39 @@ h2{
     margin-top: 20px;
     text-align: center;
     padding-bottom: 25px;
+    color: var(--color1);
+    text-shadow: 1.5px 1.5px 1.5px var(--color5);
+}
+
+h3{
+    color: var(--color6);
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px 1.5px var(--color1);
+    
+}
+
+h4{
+    margin-top: 15px;
+    margin-bottom: 0px;
     color: var(--color5);
+    text-align: center;
+    font-size: 0.8em;
 }
 
 div > p{
+    margin: auto;
+    max-width: 80vw;
     font-family: 'Source Code Pro', monospace;
     text-align: justify;
-    margin: 10px 20px;
     color:#ffffffd2;
+    text-shadow: 1.5px 1.5px 1.5px var(--color1);
+    font-weight: 600;
+    
+}
+
+.tx{
+    text-align: justify;
+    padding: 20px;
 }
 
 div{
@@ -70,20 +116,14 @@ div{
 }
 
 #outros{
-    padding: 20px 5px 30px 5px;
+    padding: 20px 20px 90px 20px;
+    /* padding-bottom: 50px; */
 }
 
 div#outros > img{
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
 }
 
-
-.skilss{
-    padding:200px ;
-    display: table-cell;
-    vertical-align: middle;
-
-}
 
 
 .gradient{
@@ -91,8 +131,8 @@ div#outros > img{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    width: 98,5vw;
-    background: linear-gradient(45deg,#000000,#244a5f ,  #7db0dd);
+    max-width: 100vw;
+    background: linear-gradient(45deg,#000000,#244a5f ,  #333836);
     background-size: 300% 300%;
     animation: colors 15s ease infinite;
 }
@@ -114,14 +154,87 @@ div#outros > img{
     }
 }
 
+/* card */
 
 
+#eu{
+    margin: auto;
+    max-height: 98.5vh;   
+    text-align: center;
+}
+
+#eu > p{
+    
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 600;
+    /* color: #ffffffd0; */
+    color: var(--color6);
+    /* padding-top: 20px;
+    padding-left: 10px; */
+    padding: 25px 15px;
+    margin: auto;
+    max-width: 80vw;
+    text-align: justify;
+    text-shadow: 1.5px 1.5px 1.5px var(--color1);
+} 
+
+#perfil{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid var(--color5); */
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px #0e0f1962;
+}
+
+/* card - fim */
+
+.center{
+    margin: auto;
+    width: 350px;
+}
+
+.logos{
+    margin: auto;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    margin: 30px;
+}
+
+#borda{
+    max-width: 100vw;
+    margin: 0px 10px 0px 10px;
+}
+
+
+#creditos{
+    background-color: #212529;
+    max-width: 100vw;
+   
+    
+}
+
+
+
+#borda > a{
+    text-align:justify;
+    padding: 3px 0px 3px 0px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-decoration:none;
+    color: var(--color6);
+    max-width: 98.5vw;
+}
+
+#borda > a:hover{
+    color: var(--color5);
+}
 
 footer{
     color: var(--color5);
     text-align: center;
-    min-width:98,5vw;
-    height: 40px;
+    max-width:100vw;
+    min-height: 40px;
     background-color:#212529;
     /* padding:-27px; */
 }
@@ -129,7 +242,7 @@ footer > p{
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
     margin: 0px;
-    padding-top: 8px;
+    padding: 8px;
 
 }
 footer > p > a{
